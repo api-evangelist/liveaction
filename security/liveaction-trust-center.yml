@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+probe: true
+url: https://trustcenter.liveaction.com/
+platform: Drata
+certifications: []
+notes: >-
+  LiveAction publishes a public Trust Center hosted on Drata at
+  trustcenter.liveaction.com (verified live, HTTP 200). The specific
+  certifications and compliance reports (e.g. SOC 2) are rendered client-side by
+  the Drata single-page app and gated behind a request/NDA flow, so no named
+  certification could be machine-verified from the page markup. The URL is
+  recorded here as a genuine, provider-published trust surface; certifications
+  are intentionally left empty rather than fabricated.
+evidence:
+- source: https://trustcenter.liveaction.com/
+  kind: trust-center
+  detail: Drata-hosted Trust Center, HTTP 200

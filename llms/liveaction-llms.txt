@@ -1,0 +1,20 @@
+# LiveAction
+
+> LiveAction is a network observability and intelligence platform for monitoring performance across physical, virtual, cloud, and SD-WAN infrastructure. Its products (LiveNX, LiveWire, LiveSP, Omnipeek) expose product-embedded REST APIs authenticated with API tokens for automation and integration. LiveAction is part of BlueCat Networks and a portfolio company of Insight Partners.
+
+## Products
+- [LiveNX](https://www.liveaction.com/products/livenx-network-monitoring-software/): Network performance monitoring using flow, API, SNMP, and cloud telemetry; exposes a REST API for automation.
+- [LiveWire](https://docs.liveaction.com/LiveWire/): Network forensics and packet capture; Capture Engine REST-API authenticated with API tokens managed in Omnipeek.
+- [LiveSP](https://docs.liveaction.com/LiveSP/): Network monitoring for service providers.
+- [Omnipeek](https://docs.liveaction.com/Omnipeek/): Network protocol analyzer; hosts the Capture Engine REST-API reference in-product.
+
+## Docs
+- [Product Documentation](https://docs.liveaction.com/): Full documentation catalog (migrating to the BlueCat Documentation Portal).
+- [Creating and Managing API Tokens](https://docs.liveaction.com/LiveWire/LiveWire%20User%20Guide/LiveWire_API_Tokens.5.1): How to create/manage tokens for the Capture Engine REST-API.
+- [Technical Support](https://customerportal.liveaction.com/s/login/): Customer support portal.
+- [Blog](https://www.liveaction.com/blog/)
+- [Trust Center](https://trustcenter.liveaction.com/): Drata-hosted security and compliance trust center.
+
+## Notes
+- No public OpenAPI/Swagger specification is published; API reference is served from the in-product admin/user menu and APIs run on customer-operated deployments (no fixed hosted base URL).
+- Authentication is API-token based (header), created and revoked from Omnipeek.

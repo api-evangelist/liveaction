@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.liveaction.com/LiveWire/LiveWire%20User%20Guide/LiveWire_API_Tokens.5.1
+docs: https://docs.liveaction.com/
+notes: >-
+  LiveAction exposes a product-embedded REST API surface rather than a public,
+  hosted developer API. The LiveWire / Omnipeek "Capture Engine REST-API" is
+  authenticated with API tokens that are created and managed inside Omnipeek;
+  once issued, the token is presented on REST-API calls. LiveNX likewise exposes
+  a REST API for automation against a customer-operated appliance. No public
+  OpenAPI/Swagger specification is published (API reference is served from the
+  in-product admin/user menu), so this profile is captured from the docs rather
+  than derived from a spec. There is no fixed public base URL — each API runs on
+  the customer's own LiveWire/LiveNX/Omnipeek deployment.
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: LiveWireCaptureEngineApiToken
+  type: apiKey
+  in: header
+  description: >-
+    API token used to authenticate against the LiveWire / Omnipeek Capture
+    Engine REST-API. Tokens are created and revoked from Omnipeek (Managing API
+    Tokens) and passed on each REST-API request.
+  product: LiveWire / Omnipeek
+  sources:
+  - https://docs.liveaction.com/LiveWire/LiveWire%20User%20Guide/LiveWire_API_Tokens.5.1
+- name: LiveNXRestApiToken
+  type: apiKey
+  in: header
+  description: >-
+    Token-based authentication for the LiveNX REST API used for automation and
+    integration against a customer-operated LiveNX deployment.
+  product: LiveNX
+  sources:
+  - https://docs.liveaction.com/

@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.liveaction.com/
+docs: https://docs.liveaction.com/
+scheme: product-release
+notes: >-
+  LiveAction publishes dated "What's New" / "New Features" release notes per
+  product release train rather than a single API changelog. Recent product
+  releases are listed below from the documentation index; per-endpoint API
+  change history is not published separately.
+current:
+  LiveNX: 25.2.0
+  LiveWire: 25.2.0
+entries:
+- product: LiveNX
+  version: 25.2.0
+  title: LiveNX 25.2.0 New Features
+  url: https://docs.liveaction.com/LiveNX/LiveNX%2025.2.0%20New%20Features/LiveNX%2025.2.0%20New%20Features.1.01
+- product: LiveNX
+  version: 24.1.0
+  title: LiveNX 24.1.0 What's New
+  url: https://docs.liveaction.com/LiveNX/LiveNX%2024.1.0%20Whats%20New/LiveNX%2024.1.0%20Whats%20New.1.1
+- product: LiveWire
+  version: 25.2.0
+  title: LiveWire 25.2.0 New Features
+  url: https://docs.liveaction.com/LiveWire/LiveWire%2025.2.0%20New%20Features/LiveWire%2025.2.0%20New%20Features.1.01
+- product: LiveWire
+  version: 24.2.2
+  title: LiveWire 24.2.2 What's New
+  url: https://docs.liveaction.com/LiveWire/LiveWire%2024.2.2%20Whats%20New/LiveWire%2024.2.2%20Whats%20New

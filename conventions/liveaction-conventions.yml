@@ -1,0 +1,42 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.liveaction.com/
+docs: https://docs.liveaction.com/
+summary: >-
+  Cross-cutting API conventions for LiveAction's product-embedded REST APIs
+  (LiveNX, and the LiveWire / Omnipeek Capture Engine REST-API). These APIs run
+  on customer-operated appliances/deployments, so there is no single hosted base
+  URL. Only conventions the vendor documents are captured here; unstated
+  behaviors (pagination style, idempotency semantics, error envelope) are left
+  null rather than invented, because LiveAction publishes no public OpenAPI
+  specification (the API reference is served from the in-product admin/user
+  menu).
+authentication:
+  style: api-token
+  location: header
+  detail: >-
+    API tokens created and managed in Omnipeek (LiveWire / Omnipeek Capture
+    Engine REST-API); LiveNX uses token-based REST authentication.
+  reference: https://docs.liveaction.com/LiveWire/LiveWire%20User%20Guide/LiveWire_API_Tokens.5.1
+transport:
+  protocol: REST
+  format: json
+idempotency:
+  supported: null
+  detail: not documented publicly
+pagination:
+  style: null
+  detail: not documented publicly
+versioning:
+  scheme: product-release
+  detail: >-
+    APIs version with the product release train (e.g. LiveNX 25.2.0, LiveWire
+    25.2.0); release notes published as "What's New" / "New Features" docs.
+error_envelope:
+  shape: null
+  detail: not documented publicly
+rate_limit_signaling:
+  supported: null
+cross_links:
+  authentication: authentication/liveaction-authentication.yml
+  changelog: changelog/liveaction-changelog.yml
