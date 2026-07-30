@@ -1,8 +1,17 @@
 aid: liveaction
 name: LiveAction
-description: LiveAction is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  LiveAction is a network observability and intelligence platform that provides
+  visibility and monitoring across physical, virtual, cloud, and SD-WAN
+  infrastructure. Its product family includes LiveNX (network performance
+  monitoring using flow, API, SNMP, and cloud telemetry), LiveWire (network
+  forensics and packet capture), LiveSP (monitoring for service providers), and
+  Omnipeek (protocol analyzer), alongside AI-driven operations offerings.
+  LiveAction's products expose product-embedded REST APIs authenticated with API
+  tokens for automation and integration; there is no public hosted developer API
+  or OpenAPI specification, as the APIs run on customer-operated deployments and
+  the reference is served in-product. LiveAction is part of BlueCat Networks and
+  a portfolio company of Insight Partners.
 url: https://raw.githubusercontent.com/api-evangelist/liveaction/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +19,31 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://www.liveaction.com/wp-content/themes/wp-liveaction/assets/images/favicon.png
 tags:
 - Company
+- Network Monitoring
+- Network Observability
+- Network Performance Monitoring
+- Packet Capture
+- Network Forensics
+- SD-WAN
+- Telemetry
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,4 +52,35 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://liveaction.com/
+  url: https://www.liveaction.com/
+- type: Documentation
+  url: https://docs.liveaction.com/
+- type: Support
+  url: https://customerportal.liveaction.com/s/login/
+- type: Blog
+  url: https://www.liveaction.com/blog/
+- type: TermsOfService
+  url: https://www.liveaction.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.liveaction.com/privacy-policy/
+- type: TrustCenter
+  url: https://trustcenter.liveaction.com/
+- type: ChangeLog
+  name: LiveNX 25.2.0 New Features
+  url: https://docs.liveaction.com/LiveNX/LiveNX%2025.2.0%20New%20Features/LiveNX%2025.2.0%20New%20Features.1.01
+- type: Authentication
+  url: authentication/liveaction-authentication.yml
+- type: DomainSecurity
+  url: security/liveaction-domain-security.yml
+- type: Conventions
+  url: conventions/liveaction-conventions.yml
+- type: ChangeLog
+  name: LiveAction changelog artifact
+  url: changelog/liveaction-changelog.yml
+- type: LLMsTxt
+  url: llms/liveaction-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
